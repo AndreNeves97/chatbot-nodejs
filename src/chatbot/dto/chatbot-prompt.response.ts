@@ -1,3 +1,3 @@
 export class ChatbotPromptResponse {
-  response: string;
+  content: string;
 }

@@ -12,6 +12,6 @@ export class ChatbotController {
   findOne(
     @Body() body: ChatbotPromptRequest,
   ): Observable<ChatbotPromptResponse> {
-    return timer(5000).pipe(switchMap(() => this.chatbotService.prompt(body)));
+    return timer(50).pipe(switchMap(() => this.chatbotService.prompt(body)));
   }
 }
